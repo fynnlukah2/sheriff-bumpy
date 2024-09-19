@@ -115,7 +115,7 @@ footer {
   font-size: 1rem;
   margin-top: 30px;
   width: 100%;
-  position: absolute;
+  position: relative; /* Adjusted for better positioning */
   bottom: 0;
 }
 
@@ -137,4 +137,26 @@ section {
   margin: 30px 0;
   width: 100%;
   max-width: 900px; /* Increased width */
+}
+
+/* Fix for the block element (assuming it is unwanted) */
+/* Replace .block-element with the actual class or ID of the element */
+.block-element {
+  display: none; /* Hide the block element */
+}
+
+/* Adjust main content to prevent overlap */
+.main-content {
+  padding-top: 20px; /* Add some padding if needed */
+  position: relative; /* Ensure it's positioned properly */
+  z-index: 10;
+}
+
+/* Footer should remain at the bottom */
+footer {
+  position: relative;
+  bottom: 0;
+  padding: 20px;
+  background-color: #004d40;
+  color: #fff;
 }
