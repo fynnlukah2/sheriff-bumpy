@@ -94,18 +94,20 @@ ul.commands li {
 /* Styling for important links/buttons */
 a.button-link {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 20px 40px; /* Larger padding for a bigger button */
   background-color: #00796b;
   color: white;
-  border-radius: 5px;
+  font-size: 2rem; /* Increased font size for the button text */
+  border-radius: 10px;
+  text-align: center;
   text-decoration: none;
-  margin-top: 20px;
   font-weight: bold;
+  margin-top: 20px;
   transition: background-color 0.3s ease-in-out;
 }
 
 a.button-link:hover {
-  background-color: #004d40;
+  background-color: #004d40; /* Darker hover effect */
 }
 
 /* Footer */
