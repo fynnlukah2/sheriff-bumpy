@@ -22,6 +22,8 @@ body {
   align-items: center;
   padding: 20px;
   background-color: #e0f7fa;
+  min-height: 100vh; /* Ensure full height to keep footer at the bottom */
+  padding-bottom: 100px; /* Space for footer */
 }
 
 /* Header */
@@ -108,24 +110,36 @@ a.button-link:hover {
 
 /* Footer */
 footer {
+  position: relative; /* Ensure footer doesn't overlap */
+  width: 100%;
   background-color: #004d40;
-  color: #fff;
+  color: white;
   padding: 20px;
   text-align: center;
-  font-size: 1rem;
-  margin-top: 30px;
-  width: 100%;
-  position: relative; /* Adjusted for better positioning */
-  bottom: 0;
+  z-index: 1; /* Ensure it doesn't overlay content */
 }
 
-footer a {
-  color: #80cbc4;
-  text-decoration: none;
+/* Flexbox layout for footer content */
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-footer a:hover {
-  color: #ffffff;
+/* Ensure section inside footer behaves properly */
+footer #Invite {
+  width: 100%; /* Adjust width to take full space */
+  padding: 20px;
+  background-color: #00796b; /* Optional: Give it a distinct background */
+  margin-bottom: 20px; /* Add space between elements */
+}
+
+/* Buttons in footer */
+footer .buttons {
+  display: inline-block;
+  margin: 10px;
 }
 
 /* Optional: Add a subtle box-shadow to elevate sections */
@@ -152,11 +166,3 @@ section {
   z-index: 10;
 }
 
-/* Footer should remain at the bottom */
-footer {
-  position: relative;
-  bottom: 0;
-  padding: 20px;
-  background-color: #004d40;
-  color: #fff;
-}
