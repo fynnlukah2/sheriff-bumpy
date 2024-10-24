@@ -1,20 +1,17 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Ensure html and body take full height */
 html, body {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f4c3; /* Brighter background for easy contrast */
-  color: #333; /* Dark text for readability */
+  background-color: #f0f4c3; 
+  color: #333; 
 }
 
-/* Main content container */
 body {
   display: flex;
   flex-direction: column;
@@ -22,49 +19,46 @@ body {
   align-items: center;
   padding: 20px;
   background-color: #e0f7fa;
-  min-height: 100vh; /* Ensure full height to keep footer at the bottom */
-  padding-bottom: 100px; /* Space for footer */
+  min-height: 100vh; 
+  padding-bottom: 100px; 
 }
 
-/* Header */
 header {
   width: 100%;
-  background-color: #ff7043; /* More vivid color */
+  background-color: #ff7043;
   color: white;
   text-align: center;
-  padding: 30px 0; /* Increased padding */
-  font-size: 2.5rem; /* Larger font size */
+  padding: 30px 0; 
+  font-size: 2.5rem; 
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 5px solid #bf360c; /* Added a bold bottom border */
+  border-bottom: 5px solid #bf360c; 
 }
 
-/* Navigation Links */
 nav ul {
   list-style: none;
   padding: 10px;
   display: flex;
   justify-content: center;
-  background-color: #00796b; /* Distinct background for nav */
+  background-color: #00796b; 
   margin-top: 10px;
 }
 
 nav ul li {
-  margin: 0 20px; /* More space between items */
+  margin: 0 20px; 
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #fff; /* White text on dark background */
+  color: #fff;
   font-size: 1.2rem;
   transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: #ffab91; /* Softer hover color */
+  color: #ffab91;
 }
 
-/* Commands Section */
 h2 {
   font-size: 2rem;
   color: #00796b;
@@ -77,27 +71,25 @@ p {
   line-height: 1.8;
 }
 
-/* Command List */
 ul.commands {
   padding-left: 40px;
   margin: 30px 0;
-  background-color: #ffffff; /* White background for contrast */
-  border-left: 5px solid #00796b; /* Bold border on the left */
+  background-color: #ffffff; 
+  border-left: 5px solid #00796b;
   padding: 20px;
 }
 
 ul.commands li {
-  margin-bottom: 15px; /* More space between commands */
+  margin-bottom: 15px; 
   font-size: 1.2rem;
 }
 
-/* Styling for important links/buttons */
 a.button-link {
   display: inline-block;
-  padding: 20px 40px; /* Larger padding for a bigger button */
+  padding: 20px 40px; 
   background-color: #00796b;
   color: white;
-  font-size: 2rem; /* Increased font size for the button text */
+  font-size: 2rem;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -107,21 +99,19 @@ a.button-link {
 }
 
 a.button-link:hover {
-  background-color: #004d40; /* Darker hover effect */
+  background-color: #004d40;
 }
 
-/* Footer */
 footer {
-  position: relative; /* Ensure footer doesn't overlap */
+  position: relative; 
   width: 100%;
   background-color: #004d40;
   color: white;
   padding: 20px;
   text-align: center;
-  z-index: 1; /* Ensure it doesn't overlay content */
+  z-index: 1;
 }
 
-/* Flexbox layout for footer content */
 footer .container {
   display: flex;
   flex-direction: column;
@@ -130,40 +120,35 @@ footer .container {
   padding: 20px;
 }
 
-/* Ensure section inside footer behaves properly */
 footer #Invite {
-  width: 100%; /* Adjust width to take full space */
+  width: 100%;
   padding: 20px;
-  background-color: #00796b; /* Optional: Give it a distinct background */
-  margin-bottom: 20px; /* Add space between elements */
+  background-color: #00796b;
+  margin-bottom: 20px;
 }
 
-/* Buttons in footer */
 footer .buttons {
   display: inline-block;
   margin: 20px;
 }
 
-/* Optional: Add a subtle box-shadow to elevate sections */
 section {
   background-color: white;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bolder shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 30px 0;
   width: 100%;
-  max-width: 900px; /* Increased width */
+  max-width: 900px;
 }
 
-/* Fix for the block element (assuming it is unwanted) */
-/* Replace .block-element with the actual class or ID of the element */
 .block-element {
-  display: none; /* Hide the block element */
+  display: none;
 }
 
-/* Adjust main content to prevent overlap */
+
 .main-content {
-  padding-top: 20px; /* Add some padding if needed */
-  position: relative; /* Ensure it's positioned properly */
+  padding-top: 20px;
+  position: relative;
   z-index: 10;
 }
